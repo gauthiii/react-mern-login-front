@@ -46,14 +46,33 @@ class App extends Component {
     {
         super(props);
 		
-		
+		//this.isLog();
 		
 		
 		
 	}
  
 
+isLog()
+{
+	
+	  if(localStorage.getItem('jwtToken')) {
+   console.log("yes");
+   
+    const decoded = jwt_decode(localStorage.getItem('jwtToken')); 
+	  console.log(decoded);
+	  
 
+ 
+
+
+  
+  //  window.location.href = "./home";
+
+
+  }
+	
+}
 	
 	
 	
